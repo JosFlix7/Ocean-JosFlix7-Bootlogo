@@ -1,0 +1,9 @@
+@echo off
+echo Flashing Logo A...
+fastboot flash logo_a logo_josflix7_v5_a.bin >nul
+echo Flashing Logo B...
+fastboot flash logo_b logo_josflix7_v5_b.bin >nul
+echo Rebooting bootloader...
+fastboot reboot bootloader >nul
+echo Done, press any key.
+pause >nul
